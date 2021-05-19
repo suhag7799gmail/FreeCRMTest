@@ -52,6 +52,13 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(title, title);
 	}
 	
+	@Test (priority=7)
+	public void loginPagerightTitleTest2() {
+		String title = loginPage.validateLoginPageTitle();
+		System.out.println(title);
+		Assert.assertEquals(title, title);
+	}
+	
 @Test (priority=1)
 	public void loginTest() throws InterruptedException {
 		
